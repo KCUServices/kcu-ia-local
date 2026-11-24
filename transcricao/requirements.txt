@@ -1,0 +1,8 @@
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9
+numpy>=1.26
+faster-whisper>=1.1
+# GPU NVIDIA: bibliotecas do CUDA 12 que o CTranslate2 precisa (dispensa instalar o CUDA Toolkit)
+nvidia-cublas-cu12; platform_system != "Darwin"
+nvidia-cudnn-cu12==9.*; platform_system != "Darwin"

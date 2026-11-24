@@ -1,0 +1,18 @@
+# Modelo "kcu": Qwen 3.5 9B que responde sempre em portugues de Portugal.
+# Criar:  ollama pull qwen3.5:9b
+#         ollama create kcu -f Modelfile
+# Usar:   ollama run kcu
+
+FROM qwen3.5:9b
+
+TEMPLATE {{ .Prompt }}
+RENDERER qwen3.5
+PARSER qwen3.5
+
+SYSTEM Respondes sempre em português de Portugal (pt-PT), mesmo que a mensagem venha noutra língua ou seja só uma palavra, a não ser que te peçam expressamente outra língua. Usa vocabulário e ortografia de Portugal (por exemplo: ecrã, telemóvel, ficheiro, utilizador), nunca do Brasil. Sê direto, claro e simpático.
+
+# Valores recomendados pela equipa do Qwen para este modelo
+PARAMETER temperature 1
+PARAMETER top_p 0.95
+PARAMETER top_k 20
+PARAMETER presence_penalty 1.5

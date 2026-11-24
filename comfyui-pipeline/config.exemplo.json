@@ -1,0 +1,35 @@
+{
+  "comfy_url": "http://127.0.0.1:8188",
+  "pasta_saida": "saida",
+  "prefixo_video": "kcu-ia-local/",
+  "ffmpeg": "ffmpeg",
+  "modelos": {
+    "zimage_unet": "z_image_turbo_bf16.safetensors",
+    "zimage_clip": "qwen_3_4b.safetensors",
+    "zimage_vae": "ae.safetensors",
+    "qwen_unet": "qwen_image_edit_2511_fp8mixed.safetensors",
+    "qwen_clip": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+    "qwen_vae": "qwen_image_vae.safetensors",
+    "qwen_lora": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+    "wan_unet_high": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+    "wan_unet_low": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+    "wan_lora_high": "wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors",
+    "wan_lora_low": "wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors",
+    "wan_clip": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+    "wan_vae": "wan_2.1_vae.safetensors"
+  },
+  "tamanhos": {
+    "imagem": [
+      1024,
+      1024
+    ],
+    "editar": [
+      720,
+      1280
+    ],
+    "video": [
+      720,
+      1280
+    ]
+  }
+}

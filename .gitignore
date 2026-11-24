@@ -1,0 +1,31 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.cache/
+
+# Registos
+*.log
+*.log.prev
+
+# Configuracao real e segredos (so o config.exemplo.json vai para o repositorio)
+comfyui-pipeline/config.json
+config.json
+*.env
+.env
+.env.*
+
+# Resultados e modelos (nunca publicar pesos)
+saida/
+output/
+outputs/
+models/
+*.safetensors
+*.ckpt
+*.gguf
+*.bin
+*.pt
+*.mp4
+*.png
+!docs/**/*.png
